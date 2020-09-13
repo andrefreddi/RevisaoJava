@@ -1,8 +1,8 @@
 package Retangulo;
 
-public class Erro_Retangulo extends Exception{
+public class erroretangulo extends Exception{
 
-    public Erro_Retangulo(){
+    public erroretangulo(){
     super("ERROR: Alguns dos lados eh igual ou menor que zero!!");
     }
 }
