@@ -1,19 +1,19 @@
 package Retangulo;
 
-public class Retangulo_Teste {
+public class retanguloteste {
     public static void main(String[] args) {
         if (args.length != 2) {
             System.err.println("Por favor digite um numero");
         } else {
-            double Primeiro_Numero = Double.parseDouble(args[0]);
-            double Segundo_Numero = Double.parseDouble(args[1]);
+            double primeironumero = Double.parseDouble(args[0]);
+            double segundonumero = Double.parseDouble(args[1]);
 
             Retangulo retangulo = new Retangulo();
             try {
-                retangulo.setComprimento(Primeiro_Numero);
-                retangulo.setLarguta(Segundo_Numero);
+                retangulo.setComprimento(primeironumero);
+                retangulo.setLarguta(segundonumero);
                 System.out.println(retangulo.toString());
-            } catch (Erro_Retangulo erro_retangulo) {
+            } catch (erroretangulo erro_retangulo) {
                 System.out.println(erro_retangulo.getMessage());
             }
 
