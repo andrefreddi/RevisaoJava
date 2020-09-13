@@ -13,8 +13,8 @@ public class retanguloteste {
                 retangulo.setComprimento(primeironumero);
                 retangulo.setLarguta(segundonumero);
                 System.out.println(retangulo.toString());
-            } catch (erroretangulo erro_retangulo) {
-                System.out.println(erro_retangulo.getMessage());
+            } catch (erroretangulo erroretangulo) {
+                System.out.println(erroretangulo.getMessage());
             }
 
         }
