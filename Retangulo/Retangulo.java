@@ -10,8 +10,8 @@ public class Retangulo{
     public Retangulo() {
     }
 
-    public Retangulo(double comprimento_Informado, double Largura_Informada) {
-        this.comprimento = comprimento_Informado;
+    public Retangulo(double comprimentoinformado, double Largura_Informada) {
+        this.comprimento = comprimentoinformado;
         this.largura = Largura_Informada;
     }
 
@@ -23,19 +23,19 @@ public class Retangulo{
         return this.largura;
     }
 
-    public void setComprimento(double comprimento_Informado) throws Erro_Retangulo {
-        if (comprimento_Informado > 0.0) {
-            this.comprimento = comprimento_Informado;
+    public void setComprimento(double comprimentoinformado) throws erroretangulo {
+        if (comprimentoinformado > 0.0) {
+            this.comprimento = comprimentoinformado;
         } else {
-            throw new Erro_Retangulo();
+            throw new erroretangulo();
         }
     }
 
-    public void setLarguta(double Largura_Informada) throws Erro_Retangulo {
-        if (Largura_Informada > 0.0) {
-            this.largura = Largura_Informada;
+    public void setLarguta(double largurainformada) throws erroretangulo {
+        if (largurainformada > 0.0) {
+            this.largura = largurainformada;
         } else {
-            throw new Erro_Retangulo();
+            throw new erroretangulo();
         }
     }
 
@@ -49,6 +49,6 @@ public class Retangulo{
 
     @Override
     public String toString() {
-        return "Area: " + area() + "\nPerrimetro: " + perimetro();
+        return "Area: " + area() + "\nPerimetro: " + perimetro();
     }
 }
